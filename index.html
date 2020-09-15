@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Quiz</title>
+</head>
+<body>
+ 
+  <div class="modal">
+    <div id="content">
+      <h1 id="number_question">1° pergunta</h1>
+      <h3 id="question">Questions</h3>
+    
+      <ul>
+        <li>
+          <input type="radio" id="a" name="answer"> <label id="a_text" for="a">Question 1</label>
+        </li>
+        <li>
+          <input type="radio" id="b" name="answer"> <label id="b_text" for="b">Question 2</label>
+        </li>
+        <li>
+          <input type="radio" id="c" name="answer"> <label id="c_text" for="c">Question 3</label>
+        </li>
+        <li>
+          <input type="radio" id="d" name="answer"> <label id="d_text" for="d">Question 4</label>
+        </li>
+      </ul>
+      <button onclick="verifyAnswer()">Enviar</button>
+    </div>
+    <div style="display:none;"id="content_score">
+      <h3 id="score">Sua pontuação foi de :</h3>
+      <h3 id="total_score">2 / 5</h3>
+      <button onclick="window.location.href= ''">Tentar novamente</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
